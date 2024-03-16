@@ -1,24 +1,17 @@
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Home</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a *ngIf="true" class="nav-link" href="/client/login">Iniciar Sesión</a>
-        </li>
-        <li class="nav-item">
-          <a *ngIf="true"  class="nav-link" href="/client/signup">Registrarse</a>
-        </li>
-      </ul>
-      <span class="navbar-text">
-        Navbar text with an inline element
-      </span>
-    </div>
-  </div>
-</nav>
+<!-- <ion-app >
+  <app-navbar></app-navbar>
 
-<router-outlet></router-outlet>
+  <ion-router-outlet></ion-router-outlet>
+
+  <ngx-spinner bdColor="rgba(10, 50, 78, 0.6)" size="medium" color="#fff" type="ball-clip-rotate" [fullScreen]="true">
+    <p style="color: white"> Cargando... </p>
+  </ngx-spinner>
+</ion-app> -->
+
+<app-navbar></app-navbar>
+
+  <router-outlet></router-outlet>
+
+
+

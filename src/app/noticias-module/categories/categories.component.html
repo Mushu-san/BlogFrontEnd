@@ -1,0 +1,24 @@
+<div class="container-fluid">
+
+  <div class="row" style="margin-bottom: 2%;">
+    <div class="col-md-12 border">
+      <h1 class="text-center">Categorias</h1>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 2%;">
+    <div *ngFor="let item of categories" class="col-3 mx-4 px-4">
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{ item.nombre }}</h5>
+          <p class="card-text">{{ item.descripcion }}</p>
+          <a href="/news/{{item.idCategoria}}" class="btn btn-primary">Ver mas</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
